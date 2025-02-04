@@ -47,7 +47,7 @@ function startGame() {
 
 function checkGuess(selectedColor) {
   if (selectedColor === targetColor) {
-    gameStatus.textContent = "Correct!";
+    gameStatus.textContent = "Correct you are a genius!";
     gameStatus.style.color = "green";
     score++;
     scoreDisplay.textContent = score;
