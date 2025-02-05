@@ -1,5 +1,5 @@
 const colorBox = document.getElementById("colorBox");
-const colorOptions = document.getElementById("colorOption");
+const colorOptions = document.getElementById("colorOptions");
 const gameStatus = document.getElementById("gameStatus");
 const scoreDisplay = document.getElementById("score");
 const newGameButton = document.getElementById("newGameButton");
@@ -51,12 +51,25 @@ function checkGuess(selectedColor) {
     gameStatus.style.color = "green";
     score++;
     scoreDisplay.textContent = score;
-    
-    generateNewRound();
+    animateGameStatus();
+    setTimeout(generateNewRound, 1000);
   } else {
     gameStatus.textContent = "Wrong! Try again.";
     gameStatus.style.color = "red"
+    animateGameStatus
   }
+}
+
+function animateGameStatus() {
+  gameStatus.classList.add("grow");
+  setTimeout(()=>{
+    gameStatus.classList.remove("grow");
+    gameStatus.classList.add("fade-out");
+  }, 1000);
+  setTimeout(()=>{
+    gameStatus.textContent = "";
+    gameStatus.classList.remove("fade-out")
+  }, 2000)
 }
 
 newGameButton.addEventListener("click", startGame);
