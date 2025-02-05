@@ -8,11 +8,11 @@ body {
 }
 .game-container{
   background-color: #000000;
-  width: 100%;
+  width: auto;
   height: auto;
   justify-self: center;
   margin: 5px;
-  border-radius: 30px;
+  border-radius: 20px;
   border: 2px solid rgb(68, 1, 252);
   align-self: center;
   padding: 5px;
