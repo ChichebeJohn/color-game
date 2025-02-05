@@ -3,6 +3,8 @@ body {
   text-align: center;
   background-color: #f4f4f4;
   padding: 20px;
+  justify-content: center;
+  padding: 100px;
 }
 .game-container{
   background-color: #000000;
@@ -17,6 +19,7 @@ body {
 }
 h1{
   color: #ffffff;
+  font-size: larger;
 }
 
 #colorBox {
@@ -76,6 +79,8 @@ p {
 .new-game{
   background: linear-gradient(45deg, black,blue);
   color: #fff;
+  width: 120px;
+  height: auto;
 }
 
 #gameStatus {
