@@ -14,12 +14,13 @@ body {
   padding: 20px;
   border-radius: 30px;
   border: 2px solid rgb(68, 1, 252);
+  align-self: center;
 
 
 }
 h1{
   color: #ffffff;
-  font-size: larger;
+  /* font-size: larger; */
 }
 
 #colorBox {
